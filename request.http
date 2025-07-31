@@ -1,0 +1,39 @@
+### CREATE POST
+
+POST  http://127.0.0.1:5000/tasks
+Content-Type: application/json
+
+{
+    "title": "CRUD em python",
+    "description":"Criar CRUD em python usando Flask"
+}
+
+### LIST All Tasks
+
+GET  http://127.0.0.1:5000/tasks
+Content-Type: application/json
+
+
+### READ A TASK #1
+GET  http://127.0.0.1:5000/tasks/1
+Content-Type: application/json
+
+
+
+### UPDATE A TASK #1
+PUT  http://127.0.0.1:5000/tasks/3/update
+Content-Type: application/json
+
+{
+    "title": "CRUD em PHP native",
+    "description":"Criar CRUD em RN usando Expo",
+    "completed":false
+}
+
+### DELETE A TASK #1
+DELETE  http://127.0.0.1:5000/tasks/1
+
+
+### COMPLETE a TASK
+
+PATCH  http://127.0.0.1:5000/tasks/1/complete
