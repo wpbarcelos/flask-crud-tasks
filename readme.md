@@ -1,7 +1,6 @@
 # CRUD of Task
 
-- =´~
-  0How to run the tests
+## How to run the tests
 
 ```
 python -m pytest tests.py
