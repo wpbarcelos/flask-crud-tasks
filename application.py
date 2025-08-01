@@ -16,7 +16,7 @@ def create_task():
                     description=data.get("description"))
     task_id_control += 1
     tasks.append(new_task)
-    return jsonify({"message": "Task was created successfully"}), 201
+    return jsonify({"message": "Task was created successfully", "id": new_task.id}), 201
 
 
 @app.route('/tasks', methods=["GET"])
@@ -36,7 +36,7 @@ def read_task(task_id):
     return jsonify({"message": "tasks not found"}), 404
 
 
-@app.route('/tasks/<int:task_id>/update', methods=['PUT'])
+@app.route('/tasks/<int:task_id>', methods=['PUT'])
 def update_task(task_id):
 
     task = None

@@ -21,7 +21,7 @@ Content-Type: application/json
 
 
 ### UPDATE A TASK #1
-PUT  http://127.0.0.1:5000/tasks/3/update
+PUT  http://127.0.0.1:5000/tasks/3
 Content-Type: application/json
 
 {
